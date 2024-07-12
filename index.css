@@ -1,0 +1,21 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: var(--primeGray) !important;
+}
+
+* {
+  --primeOrange: #ff6a00;
+  --darkOrange: #3a190b;
+  --primeGray: rgba(244, 244, 244, 1);
+}
+
+.promoteSection {
+  height: 40px;
+  background-image: url("./img/O1CN01Rn1Jyg1y95G721PM9_!!6000000006535-2-tps-3840-80.avif");
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  background-size: 1920px 40px;
+  z-index: 9999;
+}
