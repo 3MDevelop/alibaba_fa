@@ -29,6 +29,7 @@ body {
 #root > div > div {
   width: 100%;
   max-width: var(--secWidth);
+  padding: 0 30px;
 }
 
 #promotionContainer {
@@ -151,4 +152,73 @@ body {
   min-height: 88px;
   text-align: justify;
   text-justify: inter-word;
+}
+
+#bizCatContainer{
+    padding: 120px 0 !important;
+}
+
+.bizCatHrader {
+  min-width: 500px;
+  color: #222;
+  font-size: 44px;
+  line-height: 52px;
+  margin: 0;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.bizCatStatics {
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+  -webkit-column-gap: 20px;
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  width: 500px;
+  margin-right: 50px;
+}
+
+.bizCatStatics > div {
+  padding-right: 16px;
+  position: relative;
+}
+.bizCatStatics > div ::after {
+  background-color: #ddd;
+  border-radius: 2px;
+  content: "";
+  display: inline-block;
+  height: 86%;
+  right: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 4px;
+}
+
+.bizCatStatics > div :first-child {
+  direction: ltr !important;
+  text-align: right !important;
+  color: var(--orange);
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: -0.73px;
+  line-height: 44px;
+}
+
+.bizCatStatics > div :nth-child(2) {
+  color: var(--orangeDark);
+  text-align: start;
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+.prodList{
+    margin-top: 110px;
+    height: 320px;
 }
