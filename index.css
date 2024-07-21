@@ -1,93 +1,154 @@
+@import url(./iranSansFont/style.css);
+@import url(./font/font.css);
+
 html,
 body {
+  font-family: "IRANSans" !important;
   padding: 0;
   margin: 0;
   direction: rtl;
 }
 
 :root {
-  --secWidth: 1280px;
+  --orange: #f60;
+  --orangeDark: #3a190b;
+  --secWidth: 1580px;
   --gray: #666;
   --grayLight: #f4f4f4;
 }
 
-.sectionSize {
+#root > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#root > div > div {
   width: 100%;
   max-width: var(--secWidth);
-  padding: 0 20px 20px 20px;
 }
 
-/* Country */
-.countryArrow {
+#promotionContainer {
+  height: 40px;
+  background-image: url("./img/promo_baner.avif");
+  background-color: rgb(255, 233, 202);
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  background-size: 1920px 40px;
+  z-index: 9999;
+}
+
+#headerContainer {
+  height: 624px;
+  background: url("./img/hSectionBack.jpg") no-repeat center;
+  background-size: cover;
+  background-position: 97%;
+}
+
+.defHeader {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  color: white;
+  height: 40px;
+}
+
+.defHeader #logo {
+  width: 209px;
+  height: 29px;
+  background: url("./img/logo-dark.png") no-repeat center;
+  background-size: contain;
+}
+
+.signupBtn {
+  background-color: var(--orange);
+  padding: 0 24px;
+  height: 36px;
+}
+
+.signinBtn {
+  margin-right: 28px;
+}
+
+.lang-Curency {
+  margin-right: 28px;
+}
+.deliverBtn {
+  margin-right: 28px;
+}
+
+.dFlag {
+  width: 20px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.secondaryMenu > div {
+  margin-left: 28px;
+}
+
+#tileContainer {
+  background-color: var(--orangeDark);
+  padding: 60px 20px !important;
+}
+
+.navTile {
+  width: 276px;
+  height: 350px;
+  padding: 40px 20px !important;
+  background-color: hsla(0, 0%, 100%, 0.03);
+  color: white;
+  border-radius: 16px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.tileList {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px !important;
+}
+
+.tileIcon {
   aspect-ratio: 1/1;
-  height: 47px;
+  width: 60px;
   border-radius: 50%;
-  box-shadow: 0 2px 6px 2px rgba(0, 0, 0, 0.12);
+  background-color: hsla(0, 0%, 100%, 0.08);
+  padding: 10px;
 }
 
-.allFlagContainer{
-  display: flex;
+.navTile:hover {
+  background-color: rgba(255, 102, 0, 0.12);
 }
 
-.flagContainer {
-  background-color: green;
-  margin-right: 20px;
+.tileTitle {
+  color: #fff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin: 20px 0;
+  min-height: 60px;
 }
 
-.flag{
-  aspect-ratio: 1/1;
-  width: 66px;
-  margin: 0 66px;
-  background-color: #f8f8f8;
-  border-radius: 50%;
-}
-
-
-/* Footer */
-.footerLinkContainer {
-  background-color: var(--grayLight);
-  padding-top: 20px;
-}
-.footerPageList,
-.footerCopyWrite {
-  margin-top: 12px;
-  font-size: 0.9rem;
-  color: var(--gray);
-}
-
-a {
-  color: var(--gray) !important;
-}
-a:link {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-.footerLinkList > a:not(:last-child)::after {
-  content: "|";
-  padding: 0 6px;
-}
-.footerPageList > a:not(:last-child)::after {
-  content: ".";
-  padding: 0 6px;
-}
-
-.supportList > div {
-  width: 200px;
-  margin-top: 20px;
-}
-
-.supportList > div > div {
-  font-weight: bolder;
-  color: #222222;
-}
-
-.supportList > div > * {
-  margin-bottom: 20px;
-}
-
-.footerContainer {
-  border-top: 1px solid #ddd;
+.tileDis {
+  color: #fff;
+  font-size: 16px;
+  height: auto;
+  letter-spacing: 0;
+  line-height: 22px;
+  min-height: 88px;
+  text-align: justify;
+  text-justify: inter-word;
 }

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: RaviLight;
+  src: url('./fonts/Ravi FaNum Light.eot');
+  src: url('./fonts/Ravi FaNum Light.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Ravi FaNum Light.woff') format('woff'),
+    url('./fonts/Ravi FaNum Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: RaviNormal;
+  src: url('./fonts/Ravi FaNum Regular.eot');
+  src: url('./fonts/Ravi FaNum Regular.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Ravi FaNum Regular.woff') format('woff'),
+    url('./fonts/Ravi FaNum Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: RaviBold;
+  src: url('./fonts/Ravi FaNum Bold.eot');
+  src: url('./fonts/Ravi FaNum Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Ravi FaNum Bold.woff') format('woff'),
+    url('./fonts/Ravi FaNum Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: RaviBlack;
+  src: url('./fonts/Ravi FaNum Black.eot');
+  src: url('./fonts/Ravi FaNum Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Ravi FaNum Black.woff') format('woff'),
+    url('./fonts/Ravi FaNum Black.ttf') format('truetype');
+}

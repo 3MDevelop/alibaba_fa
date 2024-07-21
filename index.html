@@ -22,167 +22,144 @@
     />
   </head>
   <body>
-    <div class="root">
-      <!-- Other Sections -->
-      <div class="text-white my-5">temp DIV</div>
+    <div
+      id="root"
+      class="container-fuid d-flex flex-column justi-content-center align-items-center p-0 m-0"
+    >
+      <div id="promotionContainer"></div>
 
-      <div
-        class="w-100 bg-danger d-flex justify-content-center align-items-center"
-      >
-        <div class="sectionSize bg-info">
+      <!-- 
+      <div id="headerContainer" class="defHeader">
+        <div
+          class="w100 px-5 d-flex justify-content-start align-items-center"
+          style="height: 72px"
+        >
           <div
-            class="d-flex justify-content-between align-items-center mt-3 mb-4"
+            id="topMenu"
+            class="signupBtn rounded-pill text-white d-flex justify-content-center align-items-center"
           >
-            <div>تامین کنندگان را بر اساس کشور یا منطقه پیدا کنید</div>
-            <div class="fas d-flex flex-row-reverse">
-              <span class="fa-arrow-left me-2"></span>مشاهده همه
-            </div>
+            ثبت نام
           </div>
-          <div
-            class="bg-danger allFlagContainer w-100 py-4"
-          >
-          <!-- <div class="countryShadow h-100 p-5 bg-info">
-              <div
-                class="countryArrow bg-white d-flex justify-content-center align-items-center position-absolute start-0"
-              >
-                <i class="fa-solid fa-chevron-left"></i>
-              </div>
+          <div class="signinBtn">
+            <span style="margin-left: 6px" class="fas fa-user"></span>
+            ورود
           </div>
-            <div
-              class="countryArrow bg-white d-flex justify-content-center align-items-center position-absolute end-0"
-            >
-              <i class="fa-solid fa-chevron-right"></i>
-            </div> -->
-            <div class="flagContainer d-flex flex-column justify-content-center align-items-center">
-              <div class="flag d-flex  justify-content-center align-items-center">
-                <img src="./img/flags/jpn.png" width="32px" alt="">
-              </div>
-              <div class="fw-bolder mt-2">Japan</div>
-            </div>
-            
-            <div class="flagContainer d-flex flex-column justify-content-center align-items-center">
-              <div class="flag d-flex  justify-content-center align-items-center">
-                <img src="./img/flags/jpn.png" width="32px" alt="">
-              </div>
-              <div class="fw-bolder mt-2">Japan</div>
-            </div>
-            
-            <div class="flagContainer d-flex flex-column justify-content-center align-items-center">
-              <div class="flag d-flex  justify-content-center align-items-center">
-                <img src="./img/flags/jpn.png" width="32px" alt="">
-              </div>
-              <div class="fw-bolder mt-2">Japan</div>
-            </div>
-            
-            <div class="flagContainer d-flex flex-column justify-content-center align-items-center">
-              <div class="flag d-flex  justify-content-center align-items-center">
-                <img src="./img/flags/jpn.png" width="32px" alt="">
-              </div>
-              <div class="fw-bolder mt-2">Japan</div>
-            </div>
-            
-            <div class="flagContainer d-flex flex-column justify-content-center align-items-center">
-              <div class="flag d-flex  justify-content-center align-items-center">
-                <img src="./img/flags/jpn.png" width="32px" alt="">
-              </div>
-              <div class="fw-bolder mt-2">Japan</div>
-            </div>
-            
-            
+          <div class="lang-Curency">
+            <span style="margin-left: 6px" class="fas fa-globe"></span>
+            English-USD
           </div>
-        </div>
-      </div>
-
-      <div
-        class="container-fluid d-flex flex-column justify-content-center align-items-center p-0 m-0 footerContainer"
-      >
-        <div class="sectionSize">
-          <div
-            class="d-flex flex-wrap justify-content-between align-items-stretch supportList"
-          >
-            <div class="d-flex flex-column">
-              <div>Get support</div>
-              <a href="#">Help Center</a>
-              <a href="#">Live chat</a>
-              <a href="#">Check order status</a>
-              <a href="#">Refunds</a>
-              <a href="#">Report abuse</a>
-            </div>
-            <div class="d-flex flex-column">
-              <div>Trade Assurance</div>
-              <a href="#">Safe and easy payments</a>
-              <a href="#">Money-back policy</a>
-              <a href="#">On-time shipping</a>
-              <a href="#">After-sales protections</a>
-              <a href="#">Product monitoring services</a>
-            </div>
-            <div class="d-flex flex-column">
-              <div>Source on Alibaba.com</div>
-              <a href="#">Request for Quotation</a>
-              <a href="#">Membership program</a>
-              <a href="#">Alibaba.com Logistics</a>
-              <a href="#">Sales tax and VAT</a>
-              <a href="#">Alibaba.com Reads</a>
-            </div>
-            <div class="d-flex flex-column">
-              <div>Sell on Alibaba.com</div>
-              <a href="#">Start selling</a>
-              <a href="#">Seller Central</a>
-              <a href="#">Become a Verified Supplier</a>
-              <a href="#">Partnerships</a>
-              <a href="#">Download the app for suppliers</a>
-            </div>
-            <div class="d-flex flex-column">
-              <div>Get to know us</div>
-              <a href="#">About Alibaba.com</a>
-              <a href="#">Corporate responsibility</a>
-              <a href="#">News center</a>
-              <a href="#">Careers</a>
-            </div>
-          </div>
-
           <div>
-            <div class="fab fa-facebook mx-2"></div>
-            <div class="fab fa-linkedin mx-2"></div>
-            <div class="fab fa-twitter mx-2"></div>
-            <div class="fab fa-instagram mx-2"></div>
-            <div class="fab fa-youtube mx-2"></div>
-            <div class="fab fa-tiktok mx-2"></div>
+            <div class="deliverBtn">
+              <div style="font-size: 0.8rem">Deliver to</div>
+              <div
+                class="d-flex flex-row-reverse justify-content-start align-items-center"
+              >
+                <div
+                  class="dFlag ms-1 me-2 mb-1"
+                  style="background-image: url(./img/flags/italy.webp)"
+                ></div>
+                <div>IR</div>
+              </div>
+            </div>
           </div>
+          <div
+            class="flex-fill bg-white rounded-pill d-flex justify-content-center align-items-center"
+            style="
+              margin: 0 40px;
+              border: 1px solid #222;
+              height: 40px;
+              border: solid 1px #222;
+            "
+          >
+            search
+          </div>
+          <div id="logo"></div>
         </div>
-
-        <div class="w-100 d-flex justify-content-center footerLinkContainer">
-          <div class="sectionSize">
-            <div
-              class="footerLinkList d-flex justify-content-center align-items-center"
-            >
-              <a href="#">AliExpress</a>
-              <a href="#">1688.com</a>
-              <a href="#">Tmall</a>
-              <a href="#">Taobao</a>
-              <a href="#">World</a>
-              <a href="#">Alipay</a>
-              <a href="#">Lazada</a>
-              <a href="#">Taobao</a>
-              <a href="#">Global</a>
-            </div>
-            <div
-              class="footerPageList d-flex justify-content-center align-items-center"
-            >
-              <a href="#">Policies and rules</a>
-              <a href="#">Legal Notice</a>
-              <a href="#">Product Listing Policy</a>
-              <a href="#">Intellectual Property Protection</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Use</a>
-              <a href="#">Integrity Compliance</a>
-            </div>
-            <div class="footerCopyWrite text-center">
-              © 1999-2024 Alibaba.com. All rights reserved.
-            </div>
+        <div class="w100 px-5 d-flex secondaryMenu">
+          <div>
+            <span class="fas fa-bars ms-1"></span>
+            همه دسته بندی ها
           </div>
+          <div>انتخاب های ویژه</div>
+          <div class="ms-auto">تضمین تجارت</div>
+          <div>مرکز خریدار</div>
+          <div>مرکز کمک</div>
+          <div>برنامه را دریافت کنید</div>
+          <div class="ms-0">تامین کننده شوید</div>
         </div>
       </div>
+      -->
+
+      <!-- 
+      <div id="tileContainer">
+        <div class="tileList ">
+          <div class="navTile d-flex flex-column align-items-stretch ">
+            <div class="tileIcon">
+              <img src="./img/tileImg/O1CN01IqRqQr1UYmu3AOqmF_!!6000000002530-2-tps-96-96.avif" width="40px" alt="">
+            </div>
+            <div class="tileTitle">Millions of business offerings</div>
+            <div class="tileDis">
+              Explore products and suppliers for your business from millions of
+              offerings worldwide.
+            </div>
+          </div>
+          
+          <div class="navTile d-flex flex-column align-items-stretch ">
+            <div class="tileIcon">
+              <img src="./img/tileImg/O1CN01IqRqQr1UYmu3AOqmF_!!6000000002530-2-tps-96-96.avif" width="40px" alt="">
+            </div>
+            <div class="tileTitle">Millions of business offerings</div>
+            <div class="tileDis">
+              Explore products and suppliers for your business from millions of
+              offerings worldwide.
+            </div>
+          </div>
+          <div class="navTile d-flex flex-column align-items-stretch ">
+            <div class="tileIcon">
+              <img src="./img/tileImg/O1CN01IqRqQr1UYmu3AOqmF_!!6000000002530-2-tps-96-96.avif" width="40px" alt="">
+            </div>
+            <div class="tileTitle">Millions of business offerings</div>
+            <div class="tileDis">
+              Explore products and suppliers for your business from millions of
+              offerings worldwide.
+            </div>
+          </div>
+          <div class="navTile d-flex flex-column align-items-stretch ">
+            <div class="tileIcon">
+              <img src="./img/tileImg/O1CN01IqRqQr1UYmu3AOqmF_!!6000000002530-2-tps-96-96.avif" width="40px" alt="">
+            </div>
+            <div class="tileTitle">Millions of business offerings</div>
+            <div class="tileDis">
+              Explore products and suppliers for your business from millions of
+              offerings worldwide.
+            </div>
+          </div>
+
+        </div>
+      </div>
+      -->
+
+
+
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+      <div>1</div>
+
     </div>
 
     <script
@@ -195,5 +172,6 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
